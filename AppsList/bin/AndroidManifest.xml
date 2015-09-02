@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.ibc.android.demo.appslist.activity"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="18" />
+
+    <application
+        android:allowBackup="true"
+        android:name="com.ibc.android.demo.appslist.app.AppData"
+        android:icon="@drawable/app_icon"
+        android:label="@string/apps_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.ibc.android.demo.appslist.activity.ApkListActivity"
+            android:label="@string/apps_name" >
+            <meta-data
+                android:name="android.app.default_searchable"
+                android:value=".SearchResultsActivity" />
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        
+        <activity
+            android:name="com.ibc.android.demo.appslist.activity.ApkListActivity1"
+            android:label="@string/apps_name" >
+            <meta-data
+                android:name="android.app.default_searchable"
+                android:value=".SearchResultsActivity1" />
+        </activity>
+        
+        <activity
+            android:name="com.ibc.android.demo.appslist.activity.ApkListActivity2"
+            android:label="@string/title_activity_apk_list_activity2" >
+        </activity>
+        
+        <activity
+            android:name="com.ibc.android.demo.appslist.activity.ApkInfo"
+            android:label="@string/title_activity_apk_inf" >
+        </activity>
+
+        <activity
+            android:name="com.ibc.android.demo.appslist.activity.ApkAbout"
+            android:label="@string/action_about" >
+        </activity>
+        
+         <!-- Search results activity -->
+        <activity android:name=".SearchResultsActivity"
+            android:parentActivityName="com.ibc.android.demo.appslist.activity.ApkListActivity" >
+            <intent-filter>
+                <action android:name="android.intent.action.SEARCH" />
+            </intent-filter>
+ 
+            <meta-data
+                android:name="android.app.searchable"
+                android:resource="@xml/searchable" />
+        </activity>
+        
+        <activity android:name=".SearchResultsActivity1"
+            android:parentActivityName="com.ibc.android.demo.appslist.activity.ApkListActivity1" >
+            <intent-filter>
+                <action android:name="android.intent.action.SEARCH" />
+            </intent-filter>
+ 
+            <meta-data
+                android:name="android.app.searchable"
+                android:resource="@xml/searchable" />
+        </activity>
+     </application>
+
+</manifest>

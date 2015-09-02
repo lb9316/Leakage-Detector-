@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#000000">
+ 
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+        	
+        	<TextView
+            android:id="@+id/abt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="18dp"
+            android:layout_marginTop="24dp"
+            android:textColor="@color/green"
+            android:text="@string/abt"/>
+        	
+        	<TextView
+            android:id="@+id/abtgreen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/abt"
+            android:paddingLeft="30dp"
+            android:textColor="@color/green"
+            android:text="@string/abt_green" />
+        	
+        	<TextView
+            android:id="@+id/abtyellow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/abtgreen"
+            android:paddingLeft="30dp"
+            android:textColor="@color/green"
+            android:text="@string/abt_yellow" />
+        	
+        	<TextView
+            android:id="@+id/abtorange"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/abtyellow"
+            android:paddingLeft="30dp"
+            android:textColor="@color/green"
+            android:text="@string/abt_orange" />
+        	
+        	<TextView
+            android:id="@+id/abtred"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/abtorange"
+            android:paddingLeft="30dp"
+            android:textColor="@color/green"
+            android:text="@string/abt_red" />
+        	
+        	<TextView
+            android:id="@+id/abt1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/abtred"
+            android:paddingLeft="18dp"
+            android:textColor="@color/green"
+            android:text="@string/abt1" />
+        	
+	</RelativeLayout>
+
+</ScrollView>
+	

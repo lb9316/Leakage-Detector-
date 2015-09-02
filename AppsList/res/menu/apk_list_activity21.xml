@@ -1,0 +1,27 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:id="@+id/action_sort_alpha1"
+        android:orderInCategory="100"
+        android:showAsAction="never"
+        android:title="@string/action_sortalpha"/>
+    
+    <item
+        android:id="@+id/action_sort_state1"
+        android:orderInCategory="99"
+        android:showAsAction="never"
+        android:title="@string/action_sortstate"/>
+    
+    <item
+        android:id="@+id/action_about"
+        android:orderInCategory="100"
+        android:showAsAction="never"
+        android:title="@string/action_about"/>
+        
+    <item android:id="@+id/action_search1"
+          android:icon="@drawable/ic_action_search"
+          android:title="@string/action_search"
+          android:showAsAction="ifRoom"
+          android:actionViewClass="android.widget.SearchView"/>
+    
+</menu>
